@@ -1,0 +1,18 @@
+.footerbody{
+    height: 8rem;
+    background-color: #F19EFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footertitle{
+    font-size: 2rem;
+    font-weight: 200;
+    color: white;
+}
+
+.footersubtitle{
+    font-size: 1rem;
+}

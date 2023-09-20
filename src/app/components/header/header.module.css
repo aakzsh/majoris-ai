@@ -1,0 +1,18 @@
+.header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.image{
+    height: 2rem;
+    width: 2rem;
+}
+
+.text{
+    font-weight: 300;
+    font-size: 1.8rem;
+}
