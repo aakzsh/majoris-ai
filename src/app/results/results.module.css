@@ -1,0 +1,20 @@
+.resultstitle{
+    margin-top: 3rem;
+    font-weight: 800;
+    font-size: 2rem;
+    max-width: 60vw;
+    text-align: center;
+}
+
+.resultbody{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+}
+
+.previewgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}

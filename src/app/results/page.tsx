@@ -1,9 +1,11 @@
+import Header from "../components/header/header";
+import ResultsPage from "./results";
+
 export default function PortfolioResults(){
     return (
         <>
-        <div>
-            <h1>Results here</h1>
-        </div>
+        <Header/>
+        <ResultsPage/>
         </>
     )
 }

@@ -5,6 +5,12 @@
     justify-content: space-between;
     padding-left: 1rem;
     padding-right: 1rem;
+    -webkit-backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 .image{

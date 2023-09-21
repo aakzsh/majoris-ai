@@ -1,0 +1,55 @@
+.uploadresumebody{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-items: center;
+}
+
+.uploadDiv{
+    width: 45vw;
+    height: 60vh;
+    background-color: #93A5EC;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uploadDivChild{
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    border: 3px dotted white;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.clickbtn{
+    background-color: white;
+    border: none;
+    height: 4rem;
+    width: 15rem;
+    border-radius: 0.5rem;
+}
+
+.uploadright{
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.uploadtitle{
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.uploadsubtitle{
+    font-size: 1.2rem;
+}

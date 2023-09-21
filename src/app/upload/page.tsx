@@ -1,8 +1,12 @@
+import Header from "../components/header/header";
+import UploadResumeDiv from "./upload-resume";
+
 export default function UploadResume(){
     return (
         <>
         <div>
-            <h1>Upload Your Resume Here</h1>
+        <Header/>
+        <UploadResumeDiv/>
         </div>
         </>
     )
