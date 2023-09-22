@@ -1,6 +1,7 @@
 .footerbody{
     height: 8rem;
-    background-color: #F19EFF;
+    /* background-color: #F19EFF; */
+    background-image: linear-gradient(45deg ,#93A7EE, #DC69EF);
     display: flex;
     flex-direction: column;
     justify-content: center;
