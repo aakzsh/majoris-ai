@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import styles from "./upload-resume.module.css";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -11,27 +11,49 @@ export default function UploadResumeDiv() {
   const [isLoading, setLoading] = useState(false);
   const hiddenFileInput = useRef(null);
 
-  const handleChange = (event: any) => {
+  const handleChange = async  (event: any) => {
     const file = event.target.files[0];
-    // console.log(file);
+    console.log(file);
     setLoading(true);
-
     const formData = new FormData();
+    formData.append("name", "aakash")
     formData.append("file", file);
+    const body = {
+      "name": "aakash",
+      "file": file
+    }
+    console.log(formData.entries());
 
-    const axiosRequest = {
-      method: "POST",
+
+
+    const response = await axios.post("http://localhost:8080/upload", formData, {
       headers: {
-        Accept: "application/json",
-        "Content-Type": "multipart/form-data",
+        'Content-Type': 'multipart/form-data',
       },
-      data: formData,
-    };
-
-    axios
-      .post("/api/fetchtext", axiosRequest)
-      .then((response) => response)
-      .then((data) => console.log(data)).then((_)=>setLoading(false));
+    });
+    if (response.status === 200) {
+      console.log(response.data)
+      const formData2 = new FormData()
+      // formData.append("textdata", response.data)
+      const response2 = await axios.post("http://localhost:8080/resumejson", JSON.stringify({"textdata": response.data}), {
+        headers:{
+          "Content-Type": "application/json"
+        }
+      })
+      if(response2.status === 200){
+        console.log(response2.data)
+        window.localStorage.setItem("data", JSON.stringify(response2.data.res));
+        alert("all success")
+        router.push('/edit')
+      }
+      else{
+        alert("error")
+      }
+    } else {
+      alert("error")
+      // File upload failed.
+    }
+    setLoading(false);
   };
 
   const handleClick = () => {

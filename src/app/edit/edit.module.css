@@ -1,0 +1,22 @@
+.resumetextarea{
+    color: black;
+    background-color: #93A5EC50;
+    width: 80vw;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.resultstitle{
+    margin-top: 3rem;
+    font-weight: 800;
+    font-size: 2rem;
+    max-width: 60vw;
+    text-align: center;
+}
+
+.editbody{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+}
