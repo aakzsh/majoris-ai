@@ -25,3 +25,9 @@
     height: 3rem;
     border-radius: 0.5rem;
 }
+
+
+.wholebody{
+    max-width: 100%;
+    overflow-x: hidden;
+}

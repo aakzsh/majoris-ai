@@ -13,6 +13,7 @@
     "@types/node": "20.6.2",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
+    "@uiw/react-textarea-code-editor": "^2.1.9",
     "autoprefixer": "10.4.15",
     "axios": "^1.5.0",
     "eslint": "8.49.0",
@@ -28,9 +29,11 @@
     "pdfjs-dist": "^3.11.174",
     "pdfreader": "^3.0.2",
     "postcss": "8.4.30",
+    "prismjs": "^1.29.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-json-editor-ajrm": "^2.5.14",
+    "react-simple-code-editor": "^0.13.1",
     "tailwindcss": "3.3.3",
     "typescript": "5.2.2"
   },
@@ -39,6 +42,7 @@
     "@types/multer": "^1.4.8",
     "@types/pdf-parse": "^1.1.1",
     "@types/pdfjs-dist": "^2.10.378",
+    "@types/prismjs": "^1.26.1",
     "@types/react-json-editor-ajrm": "^2.5.4"
   }
 }

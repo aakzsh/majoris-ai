@@ -1,0 +1,59 @@
+{
+    "name":"Vaibhav Gupta",
+    "email":"guptabvaibhav@gmail.com",
+    "phone":"91-7982561790",
+    "location":"Noida,India",
+    "linkedin":"vaibhav-gupta",
+    "education":[
+    {
+    "university":"ShivNadarInstituteofEminence",
+    "degree":"Bachelor of Technology",
+    "major":"Electronics and Communication Engineering",
+    "duration":"2020 - 2024",
+    "cgpa":7.2},
+    {
+    "school":"D.A.V.PublicSchool,Noida",
+    "level":"Class XII - CBSE Board",
+    "percentage":88},
+    {
+    "school":"D.A.V.PublicSchool,Noida",
+    "level":"Class X - CBSE Board",
+    "percentage":92}],
+    "projects":[
+    {
+    "title":"ReversibleImageDataHidingwithContrastEnhancement",
+    "area":"Digital Signal Processing",
+    "description":"Analyzed and provided an efficient method for hiding secret information in the image and retrieving the data along with the cover image.",
+    "tools":"MATLAB"},
+    {
+    "title":"Simulationofa4x4arrayofSRAMcellswithrowandcolumndecoders",
+    "area":"VLSI Technology and Design",
+    "description":"Designed a schematic of 4x4 array of SRAM cells compiling with row and tree based column decoder on Cadence tool. Observed the results for read and write operations in SRAM cell.",
+    "tools":"Cadence"},
+    {
+    "title":"PCBasedOscilloscopeusingSTM32Microcontroller",
+    "area":"Embedded Systems Hardware",
+    "description":"Demonstrated the working of an Oscilloscope using STM32 Microcontroller and communication using SPI Protocol. Signals are provided through the microcontroller and the output waveforms get displayed on the PC Scope Software.",
+    "tools":"STM32 Microcontroller,SPI Protocol"}],
+    "skills":[
+    "Python",
+    "SQL",
+    "HTML",
+    "CSS",
+    "LT Spice",
+    "MATLAB",
+    "Wireshark",
+    "Cadence",
+    "MS Office",
+    "Virtuoso"],
+    "achievements":[
+    "Introduction to Cybersecurity Tools & Cyber Attacks - Coursera,IBM",
+    "Video Editing - Foundational Level",
+    "Programming and Data Science - IIT,Madras",
+    "Member of Student Council Senate 2023",
+    "Sketching & Painting"],
+    "experience":[
+    {
+    "position":"Summer Trainee",
+    "company":"NTPC Ltd.,Dadri",
+    "duration":"June 2023"}]}

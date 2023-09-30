@@ -2,7 +2,7 @@ import Preview from "../components/preview/preview";
 import styles from "./results.module.css";
 
 export default function ResultsPage() {
-    const items = [1,2,3,4,5,6,8,9,10,11]
+    const items = ["COMING SOON","Red Velvet","COMING SOON"]
   return (
     <>
       <div className={styles.resultbody}>
@@ -14,7 +14,7 @@ export default function ResultsPage() {
         </p>
         <div className={styles.previewgrid}>
           {items.map((item) => (
-            <Preview name="check" key="item"/>
+            <Preview name="check" key="item" title={item}/>
           ))}
         </div>
       </div>{" "}

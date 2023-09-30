@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import styles from "./edit.module.css"
 import ProceedButton from "../components/editdata/proceed_button";
+import EditCode from "../components/codeeditor/editor";
 
 const EditPage = () =>{
   const [data, setData] = useState(null)
@@ -28,7 +29,8 @@ const EditPage = () =>{
             "EDIT THE PARSED CONTENT AS NEEDED AND PROCEED"
           }
         </p>
-      <textarea name="data" spellcheck="false" className={styles.resumetextarea} value={data} onChange={(evt)=>setData(evt.target.value)} rows={breaks} id=""></textarea>
+        {/* <EditCode /> */}
+      <textarea name="data" spellCheck="false" className={styles.resumetextarea} value={data} onChange={(evt)=>setData(evt.target.value)} rows={breaks} id=""></textarea>
    <ProceedButton data={data}/>
     </div>
     </>

@@ -43,8 +43,8 @@ export default function UploadResumeDiv() {
       if(response2.status === 200){
         console.log(response2.data)
         window.localStorage.setItem("data", JSON.stringify(response2.data.res));
-        alert("all success")
         router.push('/edit')
+        
       }
       else{
         alert("error")

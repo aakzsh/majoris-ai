@@ -9,8 +9,16 @@ export default function ProceedButton(props: {data: string}) {
       <button
         className={styles.startbtn}
         onClick={() => {
-            window.localStorage.setItem("data", props.data);
+          try {
+            JSON.parse(props.data.replace("\n", ""));
+
+            window.localStorage.setItem("data", props.data.replace("\n", ""));
             router.push("/results")
+          } catch (e) {
+            alert("JSON not formatted properly! Start again" + e)
+          }
+         
+           
         }}
       >
         {"proceed"}
