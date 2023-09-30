@@ -1,0 +1,27 @@
+{
+  "name": "majoris-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "gpti": "^1.0.5",
+    "hercai": "^10.0.4",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^4.10.0",
+    "pdf-data-parser": "^1.1.3",
+    "pdf-parse": "^1.1.1",
+    "pdf2html": "^3.1.0",
+    "pdfreader": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
